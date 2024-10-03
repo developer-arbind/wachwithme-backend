@@ -51,11 +51,13 @@ const xrss = {
   origin: "https://www.wachwith.me",
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true,
+  transports: ['websocket', 'polling']
 };
 app.use(cors());
 const backend = http.createServer(app);
 const wss = new Server(backend, {
   cors: xrss,
+  allowEIO3: true
 });
 
 interface BUNDLED {
