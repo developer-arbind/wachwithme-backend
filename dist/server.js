@@ -45,7 +45,7 @@ const xrss = {
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
 };
-app.use(cors(xrss));
+app.use(cors());
 const backend = http.createServer(app);
 const wss = new Server(backend, {
     cors: xrss,

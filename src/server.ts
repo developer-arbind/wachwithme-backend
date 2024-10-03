@@ -48,11 +48,11 @@ const app = express();
 app.use(express.json());
 app.use(cookieParser());
 const xrss = {
-  origin: "http://localhost:5173",
+  origin: "https://www.wachwith.me",
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true,
 };
-app.use(cors(xrss));
+app.use(cors());
 const backend = http.createServer(app);
 const wss = new Server(backend, {
   cors: xrss,
