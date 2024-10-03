@@ -41,7 +41,7 @@ const app = express();
 app.use(express.json());
 app.use(cookieParser());
 const xrss = {
-    origin: "https://delightful-desert-0e4da9f0f.5.azurestaticapps.net",
+    origin: "https://www.wachwith.me",
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
 };
