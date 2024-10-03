@@ -41,7 +41,7 @@ const app = express();
 app.use(express.json());
 app.use(cookieParser());
 const xrss = {
-    origin: "http://localhost:5173",
+    origin: "https://delightful-desert-0e4da9f0f.5.azurestaticapps.net",
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
 };
