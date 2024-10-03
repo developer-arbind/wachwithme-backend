@@ -41,7 +41,7 @@ const app = express();
 app.use(express.json());
 app.use(cookieParser());
 const xrss = {
-    origin: "https://www.wachwith.me",
+    origin: "https://movie-relsm-fe.onrender.com",
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
     transports: ['websocket', 'polling']
